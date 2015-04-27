@@ -3,16 +3,20 @@
 ## Intro
 
 This template application shows how to organize your application with
-[Playframework 2](http://www.playframework.com), [WebJars](http://www.webjars.org),
-[RequireJS](http://www.requirejs.org) and [AngularJS](http://www.angularjs.org).
+[Playframework](http://www.playframework.com), [WebJars](http://www.webjars.org),
+[RequireJS](http://www.requirejs.org), [AngularJS](http://www.angularjs.org),
+and [Angular Material](https://material.angularjs.org)
 
-It shows an alternative way of organizing modules than the official
-[Angular-Play-Seed](https://github.com/typesafehub/angular-seed-play).
+It adds angular material to play-angular-require-seed.
+[Play-Angular-Require-Seed](https://github.com/mariussoutier/play-angular-require-seed).
 
-For a full explanation, read the following blog post:
-http://www.mariussoutier.com/blog/2013/08/25/requirejs-optimization-play-webjars/
+## Used Versions
 
-The changes for Play 2.3 and sbt-web will be discussed soon!
+* Play Framework: 2.3.x
+* RequireJS: 2.1.17
+* AngularJS: 1.3.15
+* Angular Material: 0.9.0-rc2
+
 
 ## Code Organization
 
