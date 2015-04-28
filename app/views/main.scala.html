@@ -1,12 +1,27 @@
-@(title: String)(content: Html)
+@(content: Html)
 
 <!DOCTYPE html>
 
 <html>
   <head>
-    <title>@title</title>
-    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <title>Angular Material - Starter App</title>
+
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/app.css")">
+    <style type="text/css">
+    /**
+     * Hide when Angular is not yet loaded and initialized
+     */
+    [ ng-cloak ] {
+    display : none ;
+    }
+    </style>
     <script>
       @Html(org.webjars.RequireJS.getSetupJavaScript(routes.WebJarAssets.at("").url))
     </script>

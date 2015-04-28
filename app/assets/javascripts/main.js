@@ -1,6 +1,4 @@
-/**
- * Created by CaptainPark on 4/28/15.
- */
+// `main.js` is the file that sbt-web will use as an entry point
 (function (requirejs) {
   'use strict';
   // -- RequireJS config --
