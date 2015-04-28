@@ -13,21 +13,41 @@
 
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/app.css")">
-    <style type="text/css">
-    /**
-     * Hide when Angular is not yet loaded and initialized
-     */
-    [ ng-cloak ] {
-    display : none ;
-    }
-    </style>
+    @* lib css start *@
+    <link rel="stylesheet" href="@routes.WebJarAssets.at(WebJarAssets.locate("angular-material.min.css"))">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/app.css")">
+    @* lib css end *@
     <script>
-      @Html(org.webjars.RequireJS.getSetupJavaScript(routes.WebJarAssets.at("").url))
+  var require = {
+    callback: function() {
+      // default requirejs configs
+      @for(webJarJson <- org.webjars.RequireJS.getSetupJson(routes.WebJarAssets.at("").url).values()) {
+        requirejs.config(@Html(webJarJson.toString));
+        }
+
+      // example custom requirejs config
+      requirejs.config({
+        paths:{
+          "angular": [
+            "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min",
+            "@routes.WebJarAssets.at(WebJarAssets.locate("angular.min.js"))"
+          ],
+          "angular-material":[
+            "https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.9.0-rc2/angular-material.min",
+            "@routes.WebJarAssets.at(WebJarAssets.locate("angular-material.min.js"))"
+          ]
+
+        }
+
+      });
+    }
+  };
     </script>
+
     <script data-main="@routes.Assets.versioned("javascripts/main.js")" src="@routes.WebJarAssets.at(WebJarAssets.locate("require.min.js"))"></script>
+    <base href="/">
   </head>
-  <body>
+  <body layout="row">
   @content
   </body>
 </html>

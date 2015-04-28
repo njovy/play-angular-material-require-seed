@@ -1,4 +1,4 @@
-# Example application for Play+AngularJS+Angular Material+RequireJS.
+# Example application for Play+AngularJS+Material+RequireJS.
 
 ## Intro
 
@@ -12,7 +12,7 @@ It adds angular material to play-angular-require-seed.
 
 ## Used Versions
 
-* Play Framework: 2.3.x
+* Play Framework: 2.3.8
 * RequireJS: 2.1.17
 * AngularJS: 1.3.15
 * Angular Material: 0.9.0-rc2
