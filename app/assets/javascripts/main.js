@@ -10,10 +10,6 @@
         deps: [],
         // it's not a RequireJS module, so we have to tell it what var is returned
         exports: 'jsRoutes'
-      },
-      'angular-material':{
-        deps:['angular'],
-        exports: 'ngMaterial'
       }
     },
     paths: {
