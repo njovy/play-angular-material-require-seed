@@ -9,6 +9,8 @@ GET        /                      controllers.Application.index
 GET        /assets/v/*file        controllers.Assets.versioned(path="/public", file)
 GET        /assets/*file          controllers.Assets.at(path="/public", file)
 
+GET        /jsroutes              controllers.Application.javascriptRoutes
+
 
 # Enable webjar based resources to be returned
 GET        /webjars/*file         controllers.WebJarAssets.at(file)

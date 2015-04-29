@@ -23,7 +23,7 @@
   };
 
   // Load the app. This is kept minimal so it doesn't need much updating.
-  require(['angular', 'angular-material'],
+  require(['angular', 'angular-material', './app'],
     function (angular) {
       angular.bootstrap(document, ['app']);
     }
