@@ -3,5 +3,5 @@ define(['angular'], function(angular) {
 
   // We must already declare most dependencies here (except for common), or the submodules' routes
   // will not be resolved
-  return angular.module('app', []);
+  return angular.module('app', ['ngMaterial']);
 });
