@@ -36,6 +36,12 @@
             "https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.9.0-rc2/angular-material.min",
             "/webjars/angular-material/0.9.0-rc2/angular-material.min"
           ]
+        },
+        shim:{
+          "angular-material": {
+            deps: ["angular", "angular-animate","angular-aria"],
+            exports: "angular-material"
+          }
         }
 
       });
