@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.webjars" % "webjars-play_2.11" % "2.3.0-3",
   "org.webjars" % "requirejs" % "2.1.17",
   "org.webjars" % "angularjs" % "1.3.15",
-  "org.webjars" % "angular-material" % "0.9.0-rc2",
-  "org.webjars" % "angular-ui-router" % "0.2.13"
+  "org.webjars" % "angular-material" % "0.9.0-rc3",
+  "org.webjars" % "angular-ui-router" % "0.2.14"
 )
 
 //javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint:unchecked", "-encoding", "UTF-8")
